@@ -3,7 +3,7 @@ const usersApi = require('../../controllers/controller')
 const sinon = require('sinon');
 
 describe('API test', () => {
-    it('API Test should 200 status', () => {
+    it('API Test should return 200 status', () => {
         const req = {};
         const res = {
             status() {},
