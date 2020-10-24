@@ -5,7 +5,7 @@ const services = require('../services/regionCalcFunctions')
 exports.getLondonUsers= async (req,res)=>{
         await axios.get(url).then((response) => {
         const data=services.getLondonLivingUsers(response.data)
-        return res.status(200).send(data)
+        return res.send(data)
     }).catch(error => {
         console.error(error);
         return Promise.reject(error);
